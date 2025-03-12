@@ -32,12 +32,10 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="bio">
-               <p>I’m a motivated professional with over 8 years of experience in sales, customer service, and delivery operations, complemented by a strong technical background in computer technology and security. I’m passionate about leveraging my diverse skill set to drive innovation and growth.</p>
-                <p>My expertise includes:</p>
+                <p>I’m a motivated professional with over 8 years of experience in sales, customer service, and delivery operations, complemented by a strong technical background in computer technology and security. I’m passionate about leveraging my diverse skill set to drive innovation and growth.</p>
+                <p><strong>My expertise includes:</strong></p>
                 <p><strong>Education:</strong> Bachelor of Computer Technology and Security - Bowie State University, 2025</p>
-<p> Associate of Arts in General Studies - Prince George’s Community College, 2020</p>
-
-               
+                <p>Associate of Arts in General Studies - Prince George’s Community College, 2020</p>
             </div>
             <div class="skills">
                 <h3>Skills</h3>
@@ -57,17 +55,40 @@
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>A responsive site with a chatbot and QR code integration.</p>
-                <p><strong>Tech:</strong> HTML, CSS, JS</p>
-                <a href="https://github.com/ylkM" target="_blank" class="btn">View on GitHub</a>
+                <a href="https://github.com/ylkM/portfolio" target="_blank">
+                    <h3>Chatbot and QR Code Integration Portfolio Website</h3>
+                </a>
+                <p>A responsive portfolio with chatbot and QR code features.</p>
             </div>
-            <!-- Add more project cards as needed -->
             <div class="project-card">
-                <h3>[Project Name]</h3>
-                <p>[Short description]</p>
-                <p><strong>Tech:</strong> [Tech stack]</p>
-                <a href="https://github.com/ylkM" target="_blank" class="btn">View on GitHub</a>
+                <a href="https://github.com/ylkM/Fundamentals-of-Cryptography" target="_blank">
+                    <h3>Fundamentals of Cryptography and Applications</h3>
+                </a>
+                <p>Explores encryption techniques and their applications.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/ylkM/Computer-Networking" target="_blank">
+                    <h3>Network Concepts and Their Implementation</h3>
+                </a>
+                <p>Implements foundational networking principles.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/ylkM/-Software-and-Operating-System-Security" target="_blank">
+                    <h3>Security Principles and Practices to Operating Systems</h3>
+                </a>
+                <p>Applies security concepts to OS design.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/ylkM/IntrusionDetectionPrevention" target="_blank">
+                    <h3>Concepts of Intrusion Detection, Anomaly Detection</h3>
+                </a>
+                <p>Focuses on detecting and preventing intrusions.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/ylkM/-Cloud-Computing" target="_blank">
+                    <h3>Cloud Storage, Infrastructure Mechanisms</h3>
+                </a>
+                <p>Covers cloud architectures, reliability, and scalability.</p>
             </div>
         </div>
     </section>
@@ -75,19 +96,27 @@
     <!-- Resume Section -->
     <section id="resume">
         <h2>Resume</h2>
-        <p>Download my updated resume below or scan the QR code to revisit this site.</p>
+        <p>Click below to view my resume or download it. Scan the QR code to revisit this site.</p>
+        <a href="Yilake Mengstie Resume.pdf" class="btn resume-btn" id="resume-btn">View Resume</a>
         <a href="Yilake Mengstie Resume.pdf" download class="btn">Download Resume</a>
-        <img src="qr-code.png" alt="QR Code" class="qr-code">
+        <div id="resume-preview" class="hidden">
+            <iframe src="Yilake Mengstie Resume.pdf" width="100%" height="500px"></iframe>
+        </div>
     </section>
+
+    <!-- QR Code (Lower-Left) -->
+    <div class="qr-code-container">
+        <img src="qr-code.png" alt="QR Code" class="qr-code">
+    </div>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <ul class="contact-list">
-                    <li>Email: <a href="mailto:ylkmngst7@gmail.com">ylkmngst7@gmail.com</a></li>
-                    <li>GitHub: <a href="https://github.com/ylkM" target="_blank" rel="noopener noreferrer">github.com/ylkM</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-profile</a></li>
-                </ul>
+            <li>Email: <a href="mailto:ylkmngst7@gmail.com">ylkmngst7@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/ylkM" target="_blank" rel="noopener noreferrer">github.com/ylkM</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/Yilake Mengstie" target="_blank" rel="noopener noreferrer">linkedin.com/Yilake Mengstie</a></li>
+        </ul>
     </section>
 
     <!-- Chatbot -->
@@ -95,16 +124,18 @@
         <button id="chat-toggle">💬</button>
         <div id="chat-window" class="hidden">
             <div id="chat-messages"></div>
-            <input type="text" id="chat-input" placeholder="Ask me anything!">
-            <button id="chat-send">Send</button>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Ask me anything!">
+                <button id="chat-send">Send</button>
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>© 2025 Yilake. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Moved to bottom -->
 </body>
 </html>
