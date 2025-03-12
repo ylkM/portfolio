@@ -1,0 +1,205 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 1.5rem;
+}
+nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* General Section Styling */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Home */
+#home {
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* About */
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bio, .skills {
+    width: 45%;
+}
+.skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.skills li {
+    background: #f0f0f0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Resume */
+.qr-code {
+    width: 150px;
+    margin-top: 1rem;
+}
+
+/* Contact */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    height: 150px;
+}
+
+/* Chatbot */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#chat-toggle {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#chat-window {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+#chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+#chat-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#chat-send {
+    padding: 0.5rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .bio, .skills {
+        width: 100%;
+    }
+}
